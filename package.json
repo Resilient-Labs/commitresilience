@@ -1,0 +1,19 @@
+{
+  "name": "resilient-community",
+  "version": "0.4.1",
+  "description": "Resilient Community to unite us in the fight for a better tomorrow",
+  "main": "server.js",
+  "author": "Resilient Community",
+  "dependencies": {
+    "body-parser": "latest",
+    "express": "latest",
+    "latest-version": "^2.0.0",
+    "mongoose": "latest",
+    "morgan": "latest",
+    "request": "latest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/muigaiunaka/resilience.git"
+  }
+}

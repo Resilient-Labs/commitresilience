@@ -1,0 +1,78 @@
+h1 {;}
+h2 {;}
+h3 {;}
+h4 {;}
+h5 {;}
+h6 {;}
+p {
+	font-size: 1.75rem;
+	font-family: helvetica, roboto, sans-serif;
+	line-height: 1.6;
+}
+
+ul {
+	list-style-type: none;
+    text-align: center;
+	}
+
+section {
+	padding-top: 6rem;
+	padding-bottom: 6rem;
+}
+
+section, header, footer {
+	display: flex;
+	display: -moz-flexbox;
+	display: -webkit-flex;
+	-webkit-justify-content: center;
+	flex-flow: column;
+	-webkit-flex-flow: column;
+}
+
+header {
+	align-items: flex-end;
+	-webkit-align-items: flex-end;
+	padding-right: 20px;
+}
+
+section, footer {
+	align-items: center;
+	-webkit-align-items: center;
+	justify-content: center;
+}
+
+h2 {
+	margin: 35px 0;
+}
+
+p {
+font-size: 1.95rem;
+font-family: Georgia, serif;
+line-height: 1.9;
+margin: 0 0 2rem;
+}
+
+footer p {
+	font-family: helvetica;
+	font-size: .8em;
+}
+
+section:nth-child(2) {padding-top: 12rem;}
+
+section:nth-child(even), footer {background: #050C0F; color: #cdcdcd;}
+section:nth-child(odd) {background: #FFF}
+
+fieldset, button {
+	margin: 1rem auto;
+}
+
+.hero {
+	background-image: url('../../img/resilienceis_hero.jpg');
+	background-size:cover;
+	background-position:left center;
+	background-attachment:fixed;
+	min-height: 100vh;
+	color: #fff;
+}
+
+.pledge_name {font-weight: bold;}
