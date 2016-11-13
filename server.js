@@ -13,7 +13,7 @@ mongoose.connect(db.url);
 // Initialize the Express App
 var app = express();
 
-// Configure 
+// Configure
 
 // To expose public assets to the world
 app.use(express.static(__dirname + '/public'));
@@ -32,4 +32,7 @@ require('./app/routes/api')(app);
 require('./app/routes/routes')(app);
 
 // Start the app with listen and a port number
-app.listen(3000);
+// app.listen(3000);
+app.listen(process.env.PORT || 3000, function(){
+  console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+});
