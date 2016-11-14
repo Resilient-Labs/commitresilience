@@ -19,7 +19,7 @@ section {
 	padding-bottom: 6rem;
 }
 
-section > div {
+section > div, .commitments {
 	max-width: 1024px;
 }
 
@@ -76,6 +76,19 @@ fieldset {
 	margin: 1rem auto;
 }
 
+a {
+	 color: #ed1b24;
+}
+
+a:hover {
+	color: #c51017;
+}
+
+footer {
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+}
+
 button {
 	margin: 40px auto;
 	background: #ed1b24;
@@ -90,13 +103,6 @@ button:hover {
 
 .commitments {
 	margin: 1rem auto;
-}
-
-.commitments:nth-child(odd) {
-
-}
-
-.commitments:nth-child(even) {
 }
 
 .pledge_name, .pledge_commit, .pledge_honoree, .pledge_title {
