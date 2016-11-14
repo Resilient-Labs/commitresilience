@@ -4,10 +4,9 @@ h3 {;}
 h4 {;}
 h5 {;}
 h6 {;}
-p {
-	font-size: 1.75rem;
-	font-family: helvetica, roboto, sans-serif;
-	line-height: 1.6;
+
+html, body {
+	margin: 0;
 }
 
 ul {
@@ -20,10 +19,15 @@ section {
 	padding-bottom: 6rem;
 }
 
+section > div {
+	max-width: 1024px;
+}
+
 section, header, footer {
 	display: flex;
 	display: -moz-flexbox;
 	display: -webkit-flex;
+	justify-content: center;
 	-webkit-justify-content: center;
 	flex-flow: column;
 	-webkit-flex-flow: column;
@@ -38,7 +42,6 @@ header {
 section, footer {
 	align-items: center;
 	-webkit-align-items: center;
-	justify-content: center;
 }
 
 h2 {
@@ -53,21 +56,63 @@ margin: 0 0 2rem;
 }
 
 footer p {
-	font-family: helvetica;
+	font-family: helvetica, sans-serif;;
 	font-size: .8em;
 }
 
-section:nth-child(2) {padding-top: 12rem;}
+section:nth-child(2) {
+	padding-top: 12rem;
+}
 
-section:nth-child(even), footer {background: #050C0F; color: #cdcdcd;}
-section:nth-child(odd) {background: #FFF}
+section:nth-child(even), footer {
+	background: #050C0F;
+	color: #cdcdcd;
+}
+section:nth-child(odd) {
+	background: #FFF;
+}
 
-fieldset, button {
+fieldset {
 	margin: 1rem auto;
 }
 
+button {
+	margin: 40px auto;
+	background: #ed1b24;
+	color: #fff;
+}
+
+button:hover {
+		background-color: #c51017;
+		color: #ddd!important;
+    transition: all .5s cubic-bezier(.23,1,.32,1);
+	}
+
+.commitments {
+	margin: 1rem auto;
+}
+
+.commitments:nth-child(odd) {
+
+}
+
+.commitments:nth-child(even) {
+}
+
+.pledge_name, .pledge_commit, .pledge_honoree {
+	text-align: left;
+}
+
+.pledge_title {
+	text-align: right;
+}
+
+.pledge_commit {
+	margin: 1rem 0;
+}
+
 .hero {
-	background-image: url('../../img/resilienceis_hero.jpg');
+	background-image: url('../../img/hero.jpg');
 	background-size:cover;
 	background-position:left center;
 	background-attachment:fixed;
@@ -76,3 +121,64 @@ fieldset, button {
 }
 
 .pledge_name {font-weight: bold;}
+
+input {
+	text-align: left;
+}
+
+/* webkit solution */
+::-webkit-input-placeholder { text-align:left; }
+/* mozilla solution */
+input:-moz-placeholder { text-align:left; }
+
+@media (orientation: landscape) and (max-width: 1024px) {
+	p {
+	font-size: 1.6rem;
+	line-height: 1.7;
+	}
+}
+
+@media (orientation: portrait) and (max-width: 1024px) {
+	p {
+	font-size: 1.6rem;
+	line-height: 1.7;
+	}
+}
+
+
+@media (orientation: landscape) and (max-width: 767px) {
+	p {
+	font-size: 1.4rem;
+	line-height: 1.5;
+	}
+
+	.hero {
+		min-height: 80vh;
+	}
+
+	section, section:nth-child(2) {
+		padding-top: 1rem;
+		padding-bottom: 3rem;
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+	}
+}
+
+@media (orientation: portrait) and (max-width: 767px) {
+	p {
+	font-size: 1.4rem;
+	line-height: 1.5;
+	}
+
+	.hero {
+		min-height: 90vh;
+	}
+
+	section, section:nth-child(2) {
+		padding-top: 1rem;
+		padding-bottom: 3rem;
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+	}
+
+ }
