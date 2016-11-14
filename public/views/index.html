@@ -2,10 +2,10 @@
 <html ng-app="myApp">
 <head>
 	<title>Resilience Is</title>
-
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="../assets/css/styles.css">
-<link rel="shortcut icon" href="http://www.resilientcoders.org/favicon.ico">
+	<link rel="shortcut icon" href="http://www.resilientcoders.org/favicon.ico">
 	<!--  Angular from Google CDN -->
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
 	<!-- Load AppController -->
@@ -19,91 +19,93 @@
 	<section>
 		<h2 class="col-md-6 text-center">Fight hate with compassion.</h2>
 		<div class="col-md-8">
-		<p>
-			This is not a political statement.
-</p>
-<p>
-This is not a protest of the results of the election, but rather of the wave of hate crimes catalyzed by it.
-There are those who have chosen to interpret the results of the election as permission to express dominance
-of a group of people over another group of people. Black churches have been burned. Threats, veiled and overt,
- have been etched into spaces of prayer and reflection. We have a responsibility to counteract that bigotry,
- and show solidarity with those most vulnerable, and most isolated. We have a responsibility to reflect the
- values of pluralism that define us, because the tenor of American culture is not set by a governing entity,
- but by American people. We must present the youngest Americans with the moral compass our parents and
- grandparents have demonstrated to us, along with the resolve to fight for it, and the vernacular with
- which to articulate it to the world.
-</p>
-<p>
-There are those among us who are offended by our amnesty to those who need it most. We will offend
-them further. If they are threatened by our efforts to make this country more inclusive, we will throw
-open the doors to our homes and our businesses, irrespective of what is or is not mandated by law.
-We will redouble our efforts to make the American Dream accessible to all; even to those who believe we
-have no right to it ourselves.
-</p>
-<p>
-We will continue to make advances towards equity, in the most American tradition there is: We will
-outwork those who work against us.
-</p>
-<p>
-We invite to join us, by sharing a single commitment that you will make to yourself and to your community, along with the name of the person in whose honor you make the commitment.
-		</p>
-		<p>Come share in person as well. We will be meeting on <span class="highlight">Tuesday, November 15th at 6pm</span> at 50 Milk Street Boston MA.
-		It's free and open to the public, thanks to <a href="http://cic.us" title="CIC">CIC.</a> </p>
-	</div>
-	</section>
-	<!-- Commitment Form-->
-	<section>
-		<form name="modelCreate" ng-submit="modelCreate.$valid && submitted && createModel()" novalidate>
-			<div class="form-group col-md-8 col-md-offset-2" ng-class="{'has-error': submitted && modelCreate.name.$invalid}">
-				<h1 class="text-center">Share one commitment</h1>
-				<p class="meta">
-					Unsure where to start? Commit to making an effort to make your place of work more accessible to members of disenfranchised communities.
-Commit to supporting and sharing news outlets that inform rather than polarize. Commit to leveraging your faith as a platform for inclusion.
-Commit to donating time and/or money to organizations that represent your values. All fields are optional. Share as much or as little as you want.
-Thank you for joining us in a way that is uniquely yours.
-				</p>
-				<!-- BIND THIS VALUE TO pledgeData.name -->
-				<fieldset class="col-md-4">
-					<input type="name" name="name"  class="form-control input-lg text-center" placeholder="Name" ng-model="pledgeData.name" />
-				</fieldset>
-				<fieldset class="col-md-4">
-					<input type="text" name="title"  class="form-control input-lg text-center" placeholder="Title" ng-model="pledgeData.title" />
-				</fieldset>
-				<fieldset class="col-md-4">
-					<input type="text" name="occupation"  class="form-control input-lg text-center" placeholder="Place Of Work" ng-model="pledgeData.occupation" />
-				</fieldset>
-				<p style="clear: both;">I commit to...</p>
-				<fieldset class="col-md-12">
-					<input type="text" name="commitment"  class="form-control input-lg text-center" placeholder="tutoring at a local school" ng-model="pledgeData.commitment" />
-				</fieldset>
-				<p style="clear: both;">For...</p>
-				<fieldset class="col-md-12">
-					<input type="text" name="honoree"  class="form-control input-lg text-center" placeholder="the teachers I had growing up" ng-model="pledgeData.honoree" />
-				</fieldset>
-				<!-- Sets the value submitted to true to help with form validation -->
-				<button type="submit" class="btn btn-primary btn-lg col-md-6 col-md-offset-3" ng-click="submitted=true">
-					Commit
-				</button>
+			<p>
+				This is not a political statement.
+			</p>
+			<p>
+				This is not a protest of the results of the election, but rather of the wave of hate crimes catalyzed by it.
+				There are those who have chosen to interpret the results of the election as permission to express dominance
+				of a group of people over another group of people. Black churches have been burned. Threats, veiled and overt,
+				have been etched into spaces of prayer and reflection. We have a responsibility to counteract that bigotry,
+				and show solidarity with those most vulnerable, and most isolated. We have a responsibility to reflect the
+				values of pluralism that define us, because the tenor of American culture is not set by a governing entity,
+				but by American people. We must present the youngest Americans with the moral compass our parents and
+				grandparents have demonstrated to us, along with the resolve to fight for it, and the vernacular with
+				which to articulate it to the world.
+			</p>
+			<p>
+				There are those among us who are offended by our amnesty to those who need it most. We will offend
+				them further. If they are threatened by our efforts to make this country more inclusive, we will throw
+				open the doors to our homes and our businesses, irrespective of what is or is not mandated by law.
+				We will redouble our efforts to make the American Dream accessible to all; even to those who believe we
+				have no right to it ourselves.
+			</p>
+			<p>
+				We will continue to make advances towards equity, in the most American tradition there is: We will
+				outwork those who work against us.
+			</p>
+			<p>
+				We invite to join us, by sharing a single commitment that you will make to yourself and to your community, along with the name of the person in whose honor you make the commitment.
+			</p>
+			<p>Come share in person as well. We will be meeting on <span class="highlight">Tuesday, November 15th at 6pm</span> at 50 Milk Street Boston MA.
+				It's free and open to the public, thanks to <a href="http://cic.us" title="CIC">CIC.</a> </p>
 			</div>
-		</form>
-	</section>
-	<!-- List of our commitments -->
-	<section style="flex-flow:wrap;">
-		<!-- <h1 class="text-center">Our Commitments</h1> -->
+		</section>
+		<!-- Commitment Form-->
+		<section>
+			<form name="modelCreate" ng-submit="modelCreate.$valid && submitted && createModel()" novalidate>
+				<div class="form-group col-md-8 col-md-offset-2" ng-class="{'has-error': submitted && modelCreate.name.$invalid}">
+					<h1 class="text-center">Share one commitment</h1>
+					<p class="meta">
+						Unsure where to start? Commit to making an effort to make your place of work more accessible to members of disenfranchised communities.
+						Commit to supporting and sharing news outlets that inform rather than polarize. Commit to leveraging your faith as a platform for inclusion.
+						Commit to donating time and/or money to organizations that represent your values. All fields are optional. Share as much or as little as you want.
+						Thank you for joining us in a way that is uniquely yours.
+					</p>
+					<!-- BIND THIS VALUE TO pledgeData.name -->
+					<fieldset class="col-xs-12 col-sm-4">
+						<input type="name" name="name"  class="form-control input-lg text-center" placeholder="Name" ng-model="pledgeData.name" />
+					</fieldset>
+					<fieldset class="col-xs-12 col-sm-4">
+						<input type="text" name="title"  class="form-control input-lg text-center" placeholder="Title" ng-model="pledgeData.title" />
+					</fieldset>
+					<fieldset class="col-xs-12 col-sm-4">
+						<input type="text" name="occupation"  class="form-control input-lg text-center" placeholder="Place Of Work" ng-model="pledgeData.occupation" />
+					</fieldset>
 
-		<ul ng-repeat="pledge in pledges" class="col-md-4">
-			<li class="pledge_name">{{pledge.name}}</li>
-			<li class="pledge_title">{{pledge.title}}</li>
-			<li class="pledge_occ">{{pledge.occupation}}</li>
-			<li class="pledge_commit">I commit to {{pledge.commitment}}</li>
-			<li class="pledge_honoree">For {{pledge.honoree}}</li>
-		</ul>
-	</section>
+					<fieldset class="col-xs-12 col-md-12">
+						<p style="clear: both;">I commit to ...</p>
+						<input type="text" name="commitment"  class="form-control input-lg text-center" placeholder="Tutoring at a local school" ng-model="pledgeData.commitment" />
+					</fieldset>
 
-<footer>
-		<h3>#CommitResilience</h3>
-		<p>Started and built by <a href="http://www.resilientcoders.org" title="Resilient Coders">Resilient Coders.</a> We hope you make the mission yours. Direct your thoughts to <a href="mailto:david@resilientcoders.org">david@resilientcoders.org</a>.
-		Photo by <a href="https://www.flickr.com/photos/eudaimos/">Luigi Morante</a>.</p>
-</footer>
-</body>
-</html>
+					<fieldset class="col-xs-12 col-md-12">
+						<p style="clear: both;">for ...</p>
+						<input type="text" name="honoree"  class="form-control input-lg text-center" placeholder="the teachers I had growing up" ng-model="pledgeData.honoree" />
+					</fieldset>
+					<!-- Sets the value submitted to true to help with form validation -->
+					<button type="submit" class="btn btn-lg col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3" ng-click="submitted=true">
+						Commit
+					</button>
+				</div>
+			</form>
+		</section>
+		<!-- List of our commitments -->
+		<section style="flex-flow:wrap;">
+			<!-- <h1 class="text-center">Our Commitments</h1> -->
+
+			<ul ng-repeat="pledge in pledges" class="col-xs-12 col-md-10 commitments">
+				<li class="pledge_name col-xs-4">{{pledge.name}}</li>
+				<li class="pledge_title col-xs-8">{{pledge.title}}, {{pledge.occupation}}</li>
+				<li class="pledge_commit col-xs-12">I commit to {{pledge.commitment}}</li>
+				<li class="pledge_honoree col-xs-12">for {{pledge.honoree}}</li>
+			</ul>
+		</section>
+
+		<footer>
+			<h3>#CommitResilience</h3>
+			<p>Started and built by <a href="http://www.resilientcoders.org" title="Resilient Coders">Resilient Coders.</a> We hope you make the mission yours. Direct your thoughts to <a href="mailto:david@resilientcoders.org">david@resilientcoders.org</a>.
+				Photo by <a href="https://www.flickr.com/photos/eudaimos/">Luigi Morante</a>.
+			</p>
+		</footer>
+	</body>
+	</html>
