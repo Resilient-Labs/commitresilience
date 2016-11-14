@@ -3,6 +3,9 @@
 <head>
 	<title>Commit Resilience</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="Commit Resilience, Commitment, Resilient, CIC, #CommitResilience, Resilient Coders">
+	<meta name="author" content="Resilient Coders">
+	<meta name="description" content="An initiative called Commit Resilience, inviting anyone to share a single action they'll commit to making, in reaction to recent events. Join us in making a single commitment to yourself and your community.">
 	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="../assets/css/styles.css">
 	<link rel="shortcut icon" href="http://www.resilientcoders.org/favicon.ico">
@@ -11,7 +14,7 @@
 	<!-- Load AppController -->
 	<script type="text/javascript" src="../controllers/app.js"></script>
 </head>
-<body ng-controller="appCtrl">
+<body ng-controller="appCtrl" ng-cloak>
 	<header class="hero flex-column">
 		<h1>#CommitResilience</h1>
 	</header>
@@ -90,20 +93,17 @@
 			</form>
 		</section>
 		<!-- List of our commitments -->
-		<section style="flex-flow:wrap;">
-			<!-- <h1 class="text-center">Our Commitments</h1> -->
-
-			<ul ng-repeat="pledge in pledges" class="col-xs-12 col-md-10 commitments">
+		<section>
+			<ul ng-repeat="pledge in pledges.reverse()" class="col-xs-12 col-md-8 commitments">
 				<li class="pledge_name col-xs-12">{{pledge.name}}</li>
 				<li class="pledge_title col-xs-12">{{pledge.title}}, {{pledge.occupation}}</li>
-				<li class="pledge_commit col-xs-12">I commit to {{pledge.commitment}}</li>
-				<li class="pledge_honoree col-xs-12">for {{pledge.honoree}}</li>
+				<li class="pledge_commit col-xs-12">I commit to {{pledge.commitment}} for {{pledge.honoree}}</li>
 			</ul>
 		</section>
 
 		<footer>
 			<h3>#CommitResilience</h3>
-			<p>Started and built by <a href="http://www.resilientcoders.org" title="Resilient Coders">Resilient Coders.</a> We hope you make the mission yours. Direct your thoughts to <a href="mailto:david@resilientcoders.org">david@resilientcoders.org</a>.
+			<p class="col-xs-12 text-center">Started and built by <a href="http://www.resilientcoders.org" title="Resilient Coders">Resilient Coders.</a> We hope you make the mission yours. Direct your thoughts to <a href="mailto:david@resilientcoders.org">david@resilientcoders.org</a>.
 				Photo by <a href="https://www.flickr.com/photos/eudaimos/">Luigi Morante</a>.
 			</p>
 		</footer>
