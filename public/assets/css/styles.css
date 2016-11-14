@@ -64,7 +64,7 @@ section:nth-child(2) {
 	padding-top: 12rem;
 }
 
-section:nth-child(even), footer {
+section:nth-child(even), footer, header {
 	background: #050C0F;
 	color: #cdcdcd;
 }
@@ -99,20 +99,20 @@ button:hover {
 .commitments:nth-child(even) {
 }
 
-.pledge_name, .pledge_commit, .pledge_honoree {
+.pledge_name, .pledge_commit, .pledge_honoree, .pledge_title {
 	text-align: left;
-}
-
-.pledge_title {
-	text-align: right;
 }
 
 .pledge_commit {
 	margin: 1rem 0;
 }
 
+.pledge_commit, .pledge_honoree {
+	font-size: .9em;
+}
+
 .hero {
-	background-image: url('../../img/hero.jpg');
+	background-image: url('../../img/resilienceis_hero.jpg');
 	background-size:cover;
 	background-position:left center;
 	background-attachment:fixed;
@@ -154,6 +154,7 @@ input:-moz-placeholder { text-align:left; }
 
 	.hero {
 		min-height: 80vh;
+		background-image: none;
 	}
 
 	section, section:nth-child(2) {
@@ -172,6 +173,7 @@ input:-moz-placeholder { text-align:left; }
 
 	.hero {
 		min-height: 90vh;
+		background-image: none;
 	}
 
 	section, section:nth-child(2) {
